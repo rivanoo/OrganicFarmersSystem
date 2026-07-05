@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Organic Farmers System</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+<nav>
+    <a href="/">🏠 Home</a>
+    <a href="/register/">👨‍🌾 Register Farmer</a>
+<a href="/add-product/">📦 Add Product</a>
+<a href="/about/">ℹ️ About</a>
+<a href="/contact/">📞 Contact</a>
+<a href="/admin/">🔒 Admin</a>
+</nav>
+
+<div class="container">
+    {% block content %}
+    {% endblock %}
+</div>
+
+<footer>
+    <p>© 2026 Organic Farmers System - Products Selling and Buying</p>
+</footer>
+
+</body>
+</html>
